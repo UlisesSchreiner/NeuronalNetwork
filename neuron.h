@@ -17,6 +17,11 @@ class Network
         void Mostrar_Pesos();
         void Mostrar_Output();
 
+        double sigmoide(double x);
+        double sigmoide_prima(double x);
+
+        std::vector <double> Calcular_outputs(std::vector<double>& input);
+        void Aprendizaje_Prop_Atras(vector< vector < double > >& inputs, vector < vector < double > >& outputs);
 
     private:
         int n_capas; //Numero de capas de la red neuronal
@@ -24,5 +29,5 @@ class Network
         vector< vector < double > > in; //Input de cada neurona
         vector< vector < double > > a; //Output de cada neurona (aplicando la funcion sigmoide al input)
         vector< vector < double > > delta; //Error de cada neurona
-   
+
 };
