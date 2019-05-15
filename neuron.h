@@ -15,7 +15,7 @@ class Network
 
         //Debug: mostrar la matriz de pesos y los outputs de cada neurona
         void Mostrar_Pesos();
-        void Mostrar_Output();
+        double Mostrar_Output();
 
         double sigmoide(double x);
         double sigmoide_prima(double x);

@@ -75,7 +75,7 @@ void Network::Mostrar_Pesos()
 
 }
 
-void Network::Mostrar_Output()
+double Network::Mostrar_Output()
 {
 std::cout << "Ouputs: " << std::endl;
 for(int k = 0; k < a.size(); k++)
@@ -88,6 +88,7 @@ for(int k = 0; k < a.size(); k++)
       std::cout << "[" << j << "](" << a[k][j] << ")  ";
     } else{
       std::cout << "\033[1;44m[" << j << "](" << a[k][j] << ")\033[0m    ";
+    return a[k][j];
     }
   }
 }
